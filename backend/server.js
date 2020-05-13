@@ -10,6 +10,10 @@ app.use(express.json());
 
 app.use("/api", routes);
 
+app.get("/api/cart-items", (req, res) => {
+  res.json ("Hi, Katelyn the server is working");
+});
+
 app.listen(port, () => {
   console.log(`Server is running: ${port}`);
 });
