@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run build & concurrently --kill-others \"npm run serve-api\" \"npm run serve\"",
-    "serve": "ng serve --proxy-config proxy.conf.json",
+    "serve": "ng serve -o --proxy-config proxy.conf.json",
     "build": "ng build --output-path=public",
-    "serve-api": "nodemon server.js",
+    "serve-api": "nodemon /Users/katelynbooth/Desktop/fullStackLab/shopping-cart/backend/server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
